@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+    
+    
+
+
+
+
+
+
+
+    
+
+
+
+    
+
+
+
+    
+
+
+
+    
+
+
+
+    
+
+
+
+    
+
+
+<descriptor>
+    <type>executable</type>
+    <id>ICEDesktopLauncher</id>
+    <name>ICE Desktop Launcher</name>
+    <version>1.0.7.1</version>
+    <codebase>https://launcher.ice.com</codebase>
+    <resource id="idp-container-mac-64" version="0.9.24" shared="true" unzip="true" os="Mac" exec="true" executable="ICE.app/Contents/MacOS/ICE" url="https://${[IWS_HOST]}/idp-container/ICEidp-container-mac-0.9.24.zip" />
+    <resource id="idp-container-win-32" version="0.9.24" shared="true" unzip="true" os="Windows" bitSize="32" exec="true" executable="ICE.exe" url="https://${[IWS_HOST]}/idp-container/ICEidp-container-win32-0.9.24.zip" />
+    <resource id="idp-container-win-64" version="0.9.24" shared="true" unzip="true" os="Windows" bitSize="64" exec="true" executable="ICE.exe" url="https://${[IWS_HOST]}/idp-container/ICEidp-container-win64-0.9.24.zip" />
+    <argument>--application-name="ICE Desktop Launcher"</argument>
+    <argument>--descriptor-url="https://launcher.ice.com/desktop/ice-desktop-launcher.icews?app_ids=connect&amp;opener=sso-ulp"</argument>
+    <argument>--display-mode="headless"</argument>
+    <argument>--enable-multiple-instances="false"</argument>
+    <argument>--add-default-system-tray="true"</argument>
+    <argument>--environment=""</argument>
+    <argument>--url="https://launcher.ice.com/desktop/1.0.7.1/?app_ids=connect"</argument>
+</descriptor>
