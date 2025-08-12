@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0+" codebase="https://www.eoxlive.com" href="download/eox-client.jnlp">
+
+    <update check="always" policy="always"/>
+    <information>
+        <title>EOXLive Client</title>
+        <vendor>EOX Holdings LLC (EOX)</vendor>
+        <description>EOXLive Client</description>
+        <description kind="short">EOXLive Client</description>
+        <icon href="download/images/eoxiconGIF.gif"/>
+        <shortcut online="false">
+            <desktop/>
+            <menu/>
+        </shortcut>
+
+    </information>
+
+    <security>
+        <all-permissions/>
+    </security>
+
+    <resources>
+        <j2se version="1.4+" java-vm-args="-Xss1024k" initial-heap-size="64m" max-heap-size="1024m"/>
+        <!-- Client Jar files -->
+        <jar href="download/client/staroption-client.jar"/>
+        <jar href="download/client/client-resources.jar"/>
+        <jar href="download/client/staroption-clientcommon.jar"/>
+        <jar href="download/client/staroption-client-server-interface.jar"/>
+        <jar href="download/client/staroption-command.jar"/>
+        <jar href="download/client/staroption-model.jar"/>
+        <jar href="download/client/staroption-util.jar"/>
+
+        <!-- Common Jar files -->
+        <jar href="download/client/lib/hibernate3.jar"/>
+        <jar href="download/client/lib/jnp-client.jar"/>
+        <jar href="download/client/lib/commons-beanutils-1.7.jar"/>
+        <jar href="download/client/lib/commons-collections-3.2.jar"/>
+        <jar href="download/client/lib/commons-lang-2.3.jar"/>
+        <jar href="download/client/lib/commons-logging-1.0.4.jar"/>
+        <jar href="download/client/lib/concurrent.jar"/>
+        <jar href="download/client/lib/iText-2.1.0.jar"/>
+        <jar href="download/client/lib/jasperreports-3.0.1.jar"/>
+        <jar href="download/client/lib/jboss-client.jar"/>
+        <jar href="download/client/lib/jbossall-client.jar"/>
+        <jar href="download/client/lib/jboss-common-client.jar"/>
+        <jar href="download/client/lib/jboss-j2ee.jar"/>
+        <jar href="download/client/lib/jboss-transaction-client.jar"/>
+        <jar href="download/client/lib/jbossha-client.jar"/>
+        <jar href="download/client/lib/jbossmq-client.jar"/>
+        <jar href="download/client/lib/jbosssx-client.jar"/>
+        <jar href="download/client/lib/jg_forms.jar"/>
+        <jar href="download/client/lib/jide-action.jar"/>
+        <jar href="download/client/lib/jide-beaninfo.jar"/>
+        <jar href="download/client/lib/jide-common.jar"/>
+        <jar href="download/client/lib/jide-components.jar"/>
+        <jar href="download/client/lib/jide-dialogs.jar"/>
+        <jar href="download/client/lib/jide-dock.jar"/>
+        <jar href="download/client/lib/jide-grids.jar"/>
+        <jar href="download/client/lib/jide-properties.jar"/>
+        <jar href="download/client/lib/jmx-client.jar"/>
+        <jar href="download/client/lib/jmx-invoker-adaptor-client.jar"/>
+        <jar href="download/client/lib/jnlp.jar"/>
+        <jar href="download/client/lib/log4j.jar"/>
+        <jar href="download/client/lib/odmg-3.0.jar"/>
+        <jar href="download/client/lib/swing-layout-1.0.3.jar"/>
+        <jar href="download/client/lib/cloning-1.7.jar"/>
+        <jar href="download/client/lib/objenesis-1.2.jar"/>
+        <jar href="download/client/lib/wave.jar"/>
+        <jar href="download/client/lib/fiorano-framework.jar"/>
+        <jar href="download/client/lib/fmq-client.jar"/>
+        <jar href="download/client/lib/javassist-3.9.0.GA.jar"/>
+        <jar href="download/client/lib/slf4j-api-1.5.8.jar"/>
+        <jar href="download/client/lib/slf4j-log4j12-1.5.8.jar"/>
+        <jar href="download/client/lib/glazedlists-1.6.0.jar"/>
+        <jar href="download/client/lib/quickfixj-core-1.5.3.jar"/>
+        <jar href="download/client/lib/swingx.jar"/>
+        <jar href="download/client/lib/imorder-parser.jar"/>
+
+        <property name="java.naming.factory.initial" value="com.css.staroption.utils.connection.StarConnectionFactory"/>
+        <property name="java.naming.provider.url" value="https://prodproxy.eoxlive.com:443"/>
+        <property name="so.timeout.ping" value="60000"/>
+        <property name="so.timeout.default" value="240000"/>
+        <property name="so.timeout.snapshot" value="240000"/>
+        <property name="proxy.command.timeout.interval" value="240000"/>
+        <property name="user.timezone" value="America/Chicago"/>
+    </resources>
+
+    <application-desc main-class="com.css.staroption.client.MainFrame"/>
+</jnlp>
